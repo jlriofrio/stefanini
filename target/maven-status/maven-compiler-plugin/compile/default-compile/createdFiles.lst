@@ -1,0 +1,6 @@
+co\com\emcali\sidapweb\SidapwebApplication.class
+co\com\emcali\sidapweb\repository\UserRepository.class
+co\com\emcali\sidapweb\controller\UserController.class
+co\com\emcali\sidapweb\service\UserService.class
+co\com\emcali\sidapweb\model\User.class
+co\com\emcali\sidapweb\service\impl\UserServiceImpl.class
