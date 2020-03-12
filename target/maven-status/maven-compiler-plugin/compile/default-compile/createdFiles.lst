@@ -1,6 +1,7 @@
+co\com\emcali\sidapweb\controller\ReporteTurnosController.class
+co\com\emcali\sidapweb\service\impl\ReporteTurnosServiceImpl.class
 co\com\emcali\sidapweb\SidapwebApplication.class
-co\com\emcali\sidapweb\repository\UserRepository.class
-co\com\emcali\sidapweb\controller\UserController.class
-co\com\emcali\sidapweb\service\UserService.class
-co\com\emcali\sidapweb\model\User.class
-co\com\emcali\sidapweb\service\impl\UserServiceImpl.class
+co\com\emcali\sidapweb\dto\ReporteTurnosDTO.class
+co\com\emcali\sidapweb\service\ReporteTurnosService.class
+co\com\emcali\sidapweb\model\ReporteTurnos.class
+co\com\emcali\sidapweb\repository\ReporteTurnosRepository.class

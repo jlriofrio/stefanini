@@ -1,10 +1,11 @@
 -------------------------------------------------------------------------------
 Test set: co.com.emcali.sidapweb.sidapweb.SidapwebApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 38.31 s <<< FAILURE! - in co.com.emcali.sidapweb.sidapweb.SidapwebApplicationTests
-contextLoads(co.com.emcali.sidapweb.sidapweb.SidapwebApplicationTests)  Time elapsed: 0.005 s  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.102 s <<< FAILURE! - in co.com.emcali.sidapweb.sidapweb.SidapwebApplicationTests
+contextLoads(co.com.emcali.sidapweb.sidapweb.SidapwebApplicationTests)  Time elapsed: 0.004 s  <<< ERROR!
 java.lang.IllegalStateException: Failed to load ApplicationContext
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
-Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
-Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reporteTurnosController': Unsatisfied dependency expressed through field 'reporteTurnoService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reporteTurnosServiceImpl': Unsatisfied dependency expressed through field 'reporteTurnosRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'reporteTurnosRepository': Post-processing of merged bean definition failed; nested exception is java.lang.NoSuchMethodError: javax.persistence.PersistenceContext.synchronization()Ljavax/persistence/SynchronizationType;
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reporteTurnosServiceImpl': Unsatisfied dependency expressed through field 'reporteTurnosRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'reporteTurnosRepository': Post-processing of merged bean definition failed; nested exception is java.lang.NoSuchMethodError: javax.persistence.PersistenceContext.synchronization()Ljavax/persistence/SynchronizationType;
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'reporteTurnosRepository': Post-processing of merged bean definition failed; nested exception is java.lang.NoSuchMethodError: javax.persistence.PersistenceContext.synchronization()Ljavax/persistence/SynchronizationType;
+Caused by: java.lang.NoSuchMethodError: javax.persistence.PersistenceContext.synchronization()Ljavax/persistence/SynchronizationType;
 

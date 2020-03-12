@@ -1,6 +1,7 @@
-C:\Workspaces\sidapweb\src\main\java\co\com\emcali\sidapweb\model\User.java
-C:\Workspaces\sidapweb\src\main\java\co\com\emcali\sidapweb\service\impl\UserServiceImpl.java
-C:\Workspaces\sidapweb\src\main\java\co\com\emcali\sidapweb\repository\UserRepository.java
+C:\Workspaces\sidapweb\src\main\java\co\com\emcali\sidapweb\service\ReporteTurnosService.java
+C:\Workspaces\sidapweb\src\main\java\co\com\emcali\sidapweb\repository\ReporteTurnosRepository.java
 C:\Workspaces\sidapweb\src\main\java\co\com\emcali\sidapweb\SidapwebApplication.java
-C:\Workspaces\sidapweb\src\main\java\co\com\emcali\sidapweb\controller\UserController.java
-C:\Workspaces\sidapweb\src\main\java\co\com\emcali\sidapweb\service\UserService.java
+C:\Workspaces\sidapweb\src\main\java\co\com\emcali\sidapweb\model\ReporteTurnos.java
+C:\Workspaces\sidapweb\src\main\java\co\com\emcali\sidapweb\service\impl\ReporteTurnosServiceImpl.java
+C:\Workspaces\sidapweb\src\main\java\co\com\emcali\sidapweb\controller\ReporteTurnosController.java
+C:\Workspaces\sidapweb\src\main\java\co\com\emcali\sidapweb\dto\ReporteTurnosDTO.java
