@@ -1,9 +1,9 @@
 package co.com.emcali.sidapweb.controller;
 
-import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -20,7 +20,12 @@ public class ReporteTurnosController {
 	private ReporteTurnosService reporteTurnoService;
 	
 	@GetMapping
-	public List<ReporteTurnosDTO> findByfechaTurnoBetween(@RequestParam(name = "fechaInicial") Date fechaInicial,@RequestParam(name = "fechaFinal") Date fechaFinal) {
-		return reporteTurnoService.findByfechaTurnoBetween(fechaInicial, fechaFinal);
+	public ResponseEntity<List<ReporteTurnosDTO>> findByfechaTurnoBetween(@RequestParam(name = "fechaInicial") String fechaInicial,@RequestParam(name = "fechaFinal") String fechaFinal) {
+		return ResponseEntity.ok(reporteTurnoService.findByfechaTurnoBetween(fechaInicial, fechaFinal));
+	}
+	
+	@GetMapping(value = "/porPlanta")
+	public ResponseEntity<List<ReporteTurnosDTO>> findByplanta(@RequestParam(name = "planta") String planta) {
+		return ResponseEntity.ok(reporteTurnoService.findByplanta(planta));
 	}
 }

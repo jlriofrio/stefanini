@@ -10,6 +10,8 @@ import co.com.emcali.sidapweb.dto.ReporteTurnosDTO;
 
 public interface ReporteTurnosService {
 
-	List<ReporteTurnosDTO> findByfechaTurnoBetween(Date fechaInicial, Date fechaFinal);
+	List<ReporteTurnosDTO> findByfechaTurnoBetween(String fechaInicial, String fechaFinal);
+	
+	List<ReporteTurnosDTO> findByplanta(String planta);
 	
 }
